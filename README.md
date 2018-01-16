@@ -1,4 +1,15 @@
-[![Build Status](https://travis-ci.org/WebAssembly/spec.svg?branch=master)](https://travis-ci.org/WebAssembly/spec)
+[![Build Status](https://travis-ci.org/WebAssembly/sign-extension-ops.svg?branch=master)](https://travis-ci.org/WebAssembly/sign-extension-ops)
+
+# Sign Extension Operators Proposal for WebAssembly
+
+This repository is a clone of github.com/WebAssembly/spec/. It is meant for
+discussion, prototype specification and implementation of a proposal to add
+sign-extension operators to WebAssembly.
+
+See the [overview](proposals/sign-extension-ops/Overview.md) for a summary of
+the proposal.
+
+Original README from upstream repository follows...
 
 # spec
 
