@@ -9,6 +9,9 @@ sign-extension operators to WebAssembly.
 See the [overview](proposals/sign-extension-ops/Overview.md) for a summary of
 the proposal.
 
+A formatted version of the spec, including this propsal, is available here:
+[webassembly.github.io/sign-extension-ops](https://webassembly.github.io/sign-extension-ops/)
+
 Original README from upstream repository follows...
 
 # spec
