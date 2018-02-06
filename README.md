@@ -1,3 +1,5 @@
+[![Implementation phase](https://img.shields.io/badge/phase-implementation-yellow.svg)](https://github.com/WebAssembly/meetings/blob/master/process/phases.md#3-implementation-phase-community--working-group)
+
 [![Build Status](https://travis-ci.org/WebAssembly/sign-extension-ops.svg?branch=master)](https://travis-ci.org/WebAssembly/sign-extension-ops)
 
 # Sign Extension Operators Proposal for WebAssembly
