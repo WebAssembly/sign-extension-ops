@@ -48,3 +48,4 @@ instr ::= ...
 [future sext]: https://github.com/WebAssembly/design/blob/master/FutureFeatures.md#additional-integer-operators
 [instruction syntax]: https://webassembly.github.io/spec/syntax/instructions.html
 [instruction binary format]: https://webassembly.github.io/spec/binary/instructions.html
+[spec]: https://webassembly.github.io/sign-extension-ops/
