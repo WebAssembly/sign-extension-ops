@@ -104,9 +104,10 @@ The control stack is likewise manipulated through auxiliary functions:
 
    func pop_ctrl() : list(val_type) =
      error_if(ctrls.is_empty())
-     let frame = ctrls.pop()
+     let frame = ctrls[0]
      pop_opds(frame.end_types)
      error_if(opds.size() =/= frame.height)
+     ctrls.pop()
      return frame.end_types
 
    func unreachable() =
@@ -169,6 +170,7 @@ Other instructions are checked in a similar manner.
          push_ctrl([], [t*])
 
        case (if t*)
+         pop_opd(I32)
          push_ctrl([t*], [t*])
 
        case (end)
@@ -200,5 +202,5 @@ Other instructions are checked in a similar manner.
 
 .. note::
    It is an invariant under the current WebAssembly instruction set that an operand of :code:`Unknown` type is never duplicated on the stack.
-   This would change if the language were extended with stack operators like :code:`dup`.
+   This would change if the language were extended with stack instructions like :code:`dup`.
    Under such an extension, the above algorithm would need to be refined by replacing the :code:`Unknown` type with proper *type variables* to ensure that all uses are consistent.
