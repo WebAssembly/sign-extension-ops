@@ -259,7 +259,7 @@
 (assert_return (invoke "ctz" (i64.const 0x8000000000000000)) (i64.const 63))
 (assert_return (invoke "ctz" (i64.const 0x7fffffffffffffff)) (i64.const 0))
 
-(assert_return (invoke "local.get" (i64.const -1)) (i64.const 64))
+(assert_return (invoke "popcnt" (i64.const -1)) (i64.const 64))
 (assert_return (invoke "popcnt" (i64.const 0)) (i64.const 0))
 (assert_return (invoke "popcnt" (i64.const 0x00008000)) (i64.const 1))
 (assert_return (invoke "popcnt" (i64.const 0x8000800080008000)) (i64.const 4))
