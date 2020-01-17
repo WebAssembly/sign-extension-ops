@@ -24,9 +24,7 @@ struct
       | Clz -> IXX.clz
       | Ctz -> IXX.ctz
       | Popcnt -> IXX.popcnt
-      | Extend8S -> IXX.extend8_s
-      | Extend16S -> IXX.extend16_s
-      | Extend32S -> IXX.extend32_s
+      | ExtendS sz -> IXX.extend_s (8 * packed_size sz)
     in fun v -> to_value (f (of_value 1 v))
 
   let binop op =
